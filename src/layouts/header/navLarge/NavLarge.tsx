@@ -3,7 +3,7 @@ import NavLargeItems from './navLargeItems/NavLargeItems';
 
 function NavLarge() {
 	return (
-		<nav className='flex items-center gap-10'>
+		<nav className='hidden min-[900px]:flex items-center gap-10'>
 			<NavLargeItems />
 			<ContactBtn />
 		</nav>
