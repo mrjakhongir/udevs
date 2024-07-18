@@ -1,3 +1,13 @@
+import Services from '@/layouts/services/Services';
+import Team from '@/layouts/team/Team';
+import Welcome from '@/layouts/welcome/Welcome';
+
 export default function Home() {
-	return <main className='w-full max-w-[1440px] mx-auto px-4'></main>;
+	return (
+		<main>
+			<Welcome />
+			<Services />
+			<Team />
+		</main>
+	);
 }
