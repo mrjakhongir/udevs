@@ -18,3 +18,9 @@ export interface NavItemLarge {
 	link: string;
 	subMenu?: SubMenu[];
 }
+
+export interface Service {
+	id: number;
+	img: string;
+	title: string;
+}

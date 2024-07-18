@@ -1,3 +1,4 @@
+import ErpSystems from '@/layouts/erpSystems/ErpSystems';
 import MobileApps from '@/layouts/mobileApps/MobileApps';
 import Services from '@/layouts/services/Services';
 import Team from '@/layouts/team/Team';
@@ -10,6 +11,7 @@ export default function Home() {
 			<Services />
 			<Team />
 			<MobileApps />
+			<ErpSystems />
 		</main>
 	);
 }

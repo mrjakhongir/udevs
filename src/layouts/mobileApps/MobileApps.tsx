@@ -1,10 +1,15 @@
 import Image from 'next/image';
 
-import MobileServices from './MobileServices';
-
 import SectionTitle from '@/components/sectionTitle/SectionTitle';
 import Text from '@/components/text/Text';
 import Technologies from '@/components/technologies/Technologies';
+import Services from '@/components/services/serviceCard/Services';
+
+const mobileServices = [
+	{ id: 1, img: '/assets/icons/apple.svg', title: 'iOS' },
+	{ id: 2, img: '/assets/icons/android.svg', title: 'Android' },
+	{ id: 3, img: '/assets/icons/cross-platform.svg', title: 'Crossplatform' },
+];
 
 const technologiesData = [
 	{ id: 1, img: '/assets/icons/swift.svg', caption: 'Swift' },
@@ -15,13 +20,13 @@ const technologiesData = [
 function MobileApps() {
 	return (
 		<section className="p-4 laptop:py-16 bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center">
-			<div className="className='w-full max-w-[1170px] mx-auto py-6 laptop:py-16'">
+			<div className='w-full max-w-[1170px] mx-auto py-6 laptop:py-12'>
 				<SectionTitle
 					content='Development of mobile applications'
 					position='center'
 				/>
 				<div className='flex flex-col laptop:flex-row-reverse items-center laptop:items-stretch gap-6 laptop:justify-between'>
-					<div className="bg-[url('/assets/pictures/mobile-apps-bg.png')] bg-no-repeat bg-cover bg-center rounded-3xl max-w-[500px] laptop:flex-1">
+					<div className="bg-[url('/assets/pictures/mobile-apps-bg.png')] bg-no-repeat bg-cover bg-center rounded-3xl max-w-[500px] laptop:flex-1 flex items-center justify-center">
 						<Image
 							src='/assets/pictures/mobile-apps.png'
 							alt='iman home page inside apple phone'
@@ -35,7 +40,7 @@ function MobileApps() {
 							color='dark'
 							marginBottom='10'
 						/>
-						<MobileServices />
+						<Services data={mobileServices} bg='bgPrimary' />
 						<Technologies title='Technologies' data={technologiesData} />
 					</div>
 				</div>
