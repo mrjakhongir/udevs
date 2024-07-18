@@ -21,9 +21,7 @@ function NavLargeItemWithDropdown({ item }: NavLargeItemWithDropdownProps) {
 				width={10}
 				height={10}
 			/>
-			{showDropdown && (
-				<DropdownItems setshowDropdown={setshowDropdown} item={item} />
-			)}
+			{showDropdown && <DropdownItems item={item} />}
 		</li>
 	);
 }
