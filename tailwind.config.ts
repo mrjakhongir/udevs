@@ -9,13 +9,33 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
-			backgroundImage: {
-				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-conic':
-					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+			screens: {
+				laptop: '900px',
 			},
+			colors: {
+				primary: 'var(--color-primary)',
+				disabled: 'var(--primary-disabled)',
+				secondary: 'var(--color-secondary)',
+				dark: 'var(--dark)',
+				opacity: 'rgba(var(--opacity) / 0.57)',
+				bgPrimary: 'var(--background)',
+				bgSecondary: 'var(--bg-secondary)',
+				font: 'var(--font-color)',
+				devops: 'var(--devops)',
+				mobile: 'var(--mobile)',
+				infrastructure: 'var(--infrastructure)',
+				frontend: 'var(--frontend)',
+				design: 'var(--design)',
+				pm: 'var(--pm)',
+				testing: 'var(--testing)',
+				backend: 'var(--backend)',
+			},
+			fontFamily: {
+      'monrope': ['ui-sans-serif', 'system-ui'],
+      
+    }
 		},
 	},
-	plugins: [],
 };
+
 export default config;
