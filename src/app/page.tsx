@@ -2,6 +2,7 @@ import ErpSystems from '@/layouts/erpSystems/ErpSystems';
 import MobileApps from '@/layouts/mobileApps/MobileApps';
 import Services from '@/layouts/services/Services';
 import Team from '@/layouts/team/Team';
+import UiUx from '@/layouts/ui/ux/UiUx';
 import Welcome from '@/layouts/welcome/Welcome';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
 			<Team />
 			<MobileApps />
 			<ErpSystems />
+			<UiUx />
 		</main>
 	);
 }
