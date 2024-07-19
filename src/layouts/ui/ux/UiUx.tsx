@@ -40,7 +40,7 @@ function UiUx() {
 				<div className='flex flex-col laptop:flex-row-reverse items-center laptop:items-stretch laptop:justify-between gap-4 laptop:gap-10'>
 					<div className="bg-[url('/assets/pictures/mobile-apps-bg.png')] bg-no-repeat bg-cover bg-center rounded-3xl max-w-[500px] flex items-center justify-center laptop:flex-1">
 						<Image
-							src='/assets/pictures/note-book.png'
+							src='/assets/pictures/mobile-apps-iman.png'
 							alt='open laptop'
 							width={500}
 							height={400}
