@@ -7,6 +7,12 @@ const config: Config = {
 		'./src/layouts/**/*.{js,ts,jsx,tsx,mdx}',
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
+	safelist: [
+		{
+			pattern:
+				/bg-(bgSecondary|bgPrimary|devops|mobile|infrastructure|frontend|design|testing|backend)/,
+		},
+	],
 	theme: {
 		extend: {
 			screens: {
@@ -30,10 +36,10 @@ const config: Config = {
 				testing: 'var(--testing)',
 				backend: 'var(--backend)',
 			},
+
 			fontFamily: {
-      'monrope': ['ui-sans-serif', 'system-ui'],
-      
-    }
+				monrope: ['ui-sans-serif', 'system-ui'],
+			},
 		},
 	},
 };
