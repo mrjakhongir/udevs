@@ -26,8 +26,8 @@ const erpSystems = [
 
 function ErpSystems() {
 	return (
-		<section className='p-4 laptop:py-12 bg-bgPrimary'>
-			<div className='w-full max-w-[1170px] mx-auto pt-8 laptop:pt-12 laptop:pb-8'>
+		<section className='px-4 bg-bgPrimary'>
+			<div className='w-full max-w-[1170px] mx-auto pt-8 laptop:pt-12 laptop:pb-10'>
 				<SectionTitle content='ERP systems' position='center' />
 				<div className='flex flex-col laptop:flex-row items-center laptop:items-stretch laptop:justify-between gap-4 laptop:gap-10'>
 					<div className="bg-[url('/assets/pictures/mobile-apps-bg.png')] bg-no-repeat bg-cover bg-center rounded-3xl max-w-[500px] flex items-center justify-center laptop:flex-1">

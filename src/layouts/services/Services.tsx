@@ -31,7 +31,7 @@ const services = [
 
 function Services() {
 	return (
-		<section className='p-4'>
+		<section className='px-4'>
 			<div className='w-full max-w-[1170px] mx-auto py-20 laptop:py-24'>
 				<SectionTitle content='Our services' position='center' />
 				<div className='grid grid-cols-2 lg:grid-cols-3 gap-5 min-[900px]:gap-x-6'>

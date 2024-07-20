@@ -1,3 +1,4 @@
+import Clients from '@/layouts/clients/Clients';
 import ErpSystems from '@/layouts/erpSystems/ErpSystems';
 import ItConsulting from '@/layouts/itConsulting/ItConsulting';
 import MobileApps from '@/layouts/mobileApps/MobileApps';
@@ -20,6 +21,7 @@ export default function Home() {
 			<Optimization />
 			<ItConsulting />
 			<Tools />
+			<Clients />
 		</main>
 	);
 }

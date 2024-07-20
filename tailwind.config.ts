@@ -36,9 +36,18 @@ const config: Config = {
 				testing: 'var(--testing)',
 				backend: 'var(--backend)',
 			},
-
 			fontFamily: {
 				monrope: ['ui-sans-serif', 'system-ui'],
+			},
+			keyframes: {
+				scroll: {
+					from: { left: 'translateX(0)' },
+					to: { transform: 'translateX(-100%)' },
+				},
+			},
+			animation: {
+				scroll: 'scroll 130s linear infinite',
+				scrollReverse: 'scroll 130s linear infinite reverse',
 			},
 		},
 	},

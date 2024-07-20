@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function Team() {
 	return (
-		<section className='p-4 bg-bgPrimary'>
+		<section className='px-4 bg-bgPrimary'>
 			<div className='w-full max-w-[1170px] mx-auto py-6 laptop:py-16'>
 				<SectionTitle content='Team' position='center' />
 				<div className='flex flex-col items-center laptop:flex-row-reverse gap-6 laptop:gap-10'>

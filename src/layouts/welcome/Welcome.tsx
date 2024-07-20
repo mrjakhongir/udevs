@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function Welcome() {
 	return (
-		<section className="bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center p-4">
+		<section className="bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center px-4">
 			<div className='w-full max-w-[1170px] mx-auto py-20 laptop:py-24 flex flex-col laptop:flex-row items-center gap-12'>
 				<div className='laptop:flex-1 flex flex-col items-center laptop:items-start'>
 					<Image

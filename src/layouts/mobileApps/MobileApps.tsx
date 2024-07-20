@@ -19,8 +19,8 @@ const technologiesData = [
 
 function MobileApps() {
 	return (
-		<section className="p-4 laptop:py-16 bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center">
-			<div className='w-full max-w-[1170px] mx-auto py-6 laptop:py-12'>
+		<section className="px-4 bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center">
+			<div className='w-full max-w-[1170px] mx-auto py-6 laptop:py-16'>
 				<SectionTitle
 					content='Development of mobile applications'
 					position='center'

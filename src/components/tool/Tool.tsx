@@ -1,15 +1,20 @@
 import Image from 'next/image';
 
 type ToolProps = {
-	tool: { id: number; img: string; caption: string; bg: string };
+	tool: { id: number; img: string; caption: string; bg: string; tool: string };
+	selectedTool: string;
 };
 
-function Tool({ tool }: ToolProps) {
+function Tool({ tool, selectedTool }: ToolProps) {
 	return (
 		<figure
-			className={`bg-${tool.bg} py-3 rounded-md flex flex-col items-center justify-center`}>
+			className={`bg-${
+				selectedTool
+					? selectedTool.toLowerCase() === tool.tool && tool.bg
+					: tool.bg
+			} transition-all py-3 laptop:py-5 rounded-md flex flex-col items-center justify-center`}>
 			<Image
-				className='max-w-4 laptop:min-w-6 mb-2'
+				className='max-w-4 laptop:min-w-6 mb-2 laptop:mb-4'
 				src={tool.img}
 				alt={tool.caption}
 				width={15}

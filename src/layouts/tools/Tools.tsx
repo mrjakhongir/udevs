@@ -1,5 +1,8 @@
+'use client';
+import { useState } from 'react';
 import SectionTitle from '@/components/sectionTitle/SectionTitle';
 import Tool from '@/components/tool/Tool';
+import SelectTools from './selectTools/SelectTools';
 
 const tools = [
 	{
@@ -153,21 +156,21 @@ const tools = [
 		id: 21,
 		img: '/assets/tools/balsamic.svg',
 		caption: 'Balsamic',
-		tool: 'uxui',
+		tool: 'ux/ui',
 		bg: 'design',
 	},
 	{
 		id: 22,
 		img: '/assets/tools/invision.svg',
 		caption: 'Invision',
-		tool: 'uxui',
+		tool: 'ux/ui',
 		bg: 'design',
 	},
 	{
 		id: 23,
 		img: '/assets/tools/figma.svg',
 		caption: 'Figma',
-		tool: 'uxui',
+		tool: 'ux/ui',
 		bg: 'design',
 	},
 	{
@@ -237,49 +240,49 @@ const tools = [
 		id: 33,
 		img: '/assets/tools/principle.svg',
 		caption: 'Principle',
-		tool: 'uxui',
+		tool: 'ux/ui',
 		bg: 'design',
 	},
 	{
 		id: 34,
 		img: '/assets/tools/sketch.svg',
 		caption: 'Sketch',
-		tool: 'uxui',
+		tool: 'ux/ui',
 		bg: 'design',
 	},
 	{
 		id: 35,
 		img: '/assets/tools/adobe-suite.svg',
 		caption: 'Adobe Suite',
-		tool: 'uxui',
+		tool: 'ux/ui',
 		bg: 'design',
 	},
 	{
 		id: 36,
 		img: '/assets/tools/you-track.svg',
 		caption: 'You Track',
-		tool: 'test',
+		tool: 'testing',
 		bg: 'testing',
 	},
 	{
 		id: 37,
 		img: '/assets/tools/appium.svg',
 		caption: 'Appium',
-		tool: 'test',
+		tool: 'testing',
 		bg: 'testing',
 	},
 	{
 		id: 38,
 		img: '/assets/tools/cypress.svg',
 		caption: 'Cypress',
-		tool: 'test',
+		tool: 'testing',
 		bg: 'testing',
 	},
 	{
 		id: 39,
 		img: '/assets/tools/jmeter.svg',
 		caption: 'Jmeter',
-		tool: 'test',
+		tool: 'testing',
 		bg: 'testing',
 	},
 	{
@@ -293,7 +296,7 @@ const tools = [
 		id: 41,
 		img: '/assets/tools/cassandra.svg',
 		caption: 'Cassandra',
-		tool: 'test',
+		tool: 'testing',
 		bg: 'testing',
 	},
 	{
@@ -314,40 +317,42 @@ const tools = [
 		id: 44,
 		img: '/assets/tools/zeplin.svg',
 		caption: 'Zeplin',
-		tool: 'uxui',
+		tool: 'ux/ui',
 		bg: 'design',
 	},
 	{
 		id: 45,
 		img: '/assets/tools/adobe-illustrator.svg',
 		caption: 'Illustrator',
-		tool: 'uxui',
+		tool: 'ux/ui',
 		bg: 'design',
 	},
 	{
 		id: 46,
 		img: '/assets/tools/lottie.svg',
 		caption: 'Lottie',
-		tool: 'uxui',
+		tool: 'ux/ui',
 		bg: 'design',
 	},
 	{
 		id: 47,
 		img: '/assets/tools/photoshop.svg',
 		caption: 'Photoshop',
-		tool: 'uxui',
+		tool: 'ux/ui',
 		bg: 'design',
 	},
 ];
 
 function Tools() {
+	const [selectedTool, setSelectedTool] = useState('');
 	return (
-		<section className='p-4 laptop:py-12 bg-bgPrimary'>
-			<div className='w-full max-w-[1170px] mx-auto pt-8 laptop:pt-12 laptop:pb-8'>
+		<section className='px-4 bg-bgPrimary'>
+			<div className='w-full max-w-[1170px] mx-auto pt-8 laptop:py-16'>
 				<SectionTitle content='Tools' position='center' />
+				<SelectTools setSelectedTool={setSelectedTool} />
 				<div className='grid grid-cols-5 laptop:grid-cols-12 gap-2'>
 					{tools.map((tool) => (
-						<Tool key={tool.id} tool={tool} />
+						<Tool key={tool.id} tool={tool} selectedTool={selectedTool} />
 					))}
 				</div>
 			</div>
