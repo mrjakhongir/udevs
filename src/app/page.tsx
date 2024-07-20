@@ -2,6 +2,7 @@ import Clients from '@/layouts/clients/Clients';
 import Delever from '@/layouts/delever/Delever';
 import ErpSystems from '@/layouts/erpSystems/ErpSystems';
 import Goodzone from '@/layouts/goodzone/Goodzone';
+import HowWeWork from '@/layouts/howWeWork/HowWeWork';
 import Iman from '@/layouts/iman/Iman';
 import ItConsulting from '@/layouts/itConsulting/ItConsulting';
 import MobileApps from '@/layouts/mobileApps/MobileApps';
@@ -30,6 +31,7 @@ export default function Home() {
 			<Smsuz />
 			<Goodzone />
 			<Iman />
+			<HowWeWork />
 		</main>
 	);
 }
