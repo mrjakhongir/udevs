@@ -10,7 +10,7 @@ const config: Config = {
 	safelist: [
 		{
 			pattern:
-				/bg-(bgSecondary|bgPrimary|devops|mobile|infrastructure|frontend|design|testing|backend)/,
+				/bg-(bgSecondary|bgPrimary|devops|mobile|infrastructure|frontend|design|testing|backend|bgDelivery|colorDelivery|bgSmsuz|colorSmsuz|bgGoodzone|colorGoodzone|bgIman|colorIman)/,
 		},
 	],
 	theme: {
@@ -35,6 +35,14 @@ const config: Config = {
 				pm: 'var(--pm)',
 				testing: 'var(--testing)',
 				backend: 'var(--backend)',
+				bgDelivery: 'var(--bg-delivery)',
+				colorDelivery: 'var(--color-delivery)',
+				bgSmsuz: 'var(--bg-smsuz)',
+				colorSmsuz: 'var(--color-smsuz)',
+				bgGoodzone: 'var(--bg-goodzone)',
+				colorGoodzone: 'var(--color-goodzone)',
+				bgIman: 'var(--bg-iman)',
+				colorIman: 'var(--color-iman)',
 			},
 			fontFamily: {
 				monrope: ['ui-sans-serif', 'system-ui'],
