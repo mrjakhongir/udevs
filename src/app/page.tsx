@@ -1,4 +1,5 @@
 import Clients from '@/layouts/clients/Clients';
+import Contact from '@/layouts/contact/Contact';
 import Delever from '@/layouts/delever/Delever';
 import ErpSystems from '@/layouts/erpSystems/ErpSystems';
 import Goodzone from '@/layouts/goodzone/Goodzone';
@@ -32,6 +33,7 @@ export default function Home() {
 			<Goodzone />
 			<Iman />
 			<HowWeWork />
+			<Contact />
 		</main>
 	);
 }
