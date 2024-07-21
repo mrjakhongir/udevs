@@ -1,6 +1,8 @@
+import Image from 'next/image';
+
 import SectionTitle from '@/components/sectionTitle/SectionTitle';
 import Text from '@/components/text/Text';
-import Image from 'next/image';
+import Countup from './Countup';
 
 function Team() {
 	return (
@@ -24,8 +26,8 @@ function Team() {
 							marginBottom='10'
 						/>
 						<div className='flex flex-col font-monrope font-semibold'>
-							<span className='text-[80px] laptop:text-[120px] leading-[70px] laptop:leading-[96px] text-primary'>
-								100+
+							<span className='text-[80px] laptop:text-[120px] leading-[70px] laptop:leading-[96px] text-primary font-monrope'>
+								<Countup from={0} to={100} />
 							</span>
 							<span className='text-[24px] laptop:text-[40px] leading-[72px] text-font '>
 								Dedicated team
