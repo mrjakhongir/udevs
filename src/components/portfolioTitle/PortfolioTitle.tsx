@@ -22,7 +22,7 @@ function PortfolioTitle({
 	return (
 		<div
 			className={`flex flex-col items-start ${
-				position === 'right' && 'laptop:translate-x-[53%]'
+				position === 'right' && 'laptop:translate-x-[130%] laptop:w-[40%]'
 			} gap-4 mb-5`}>
 			<Image
 				className='w-auto'

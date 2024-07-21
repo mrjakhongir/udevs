@@ -40,7 +40,7 @@ function NavSmall({ openNav, setOpenNav }: NavSmallProps) {
 			</ul>
 			<div className='self-stretch flex flex-col gap-10'>
 				<ContactBtn setOpenNav={setOpenNav} />
-				<NavSocials setOpenNav={setOpenNav} />
+				<NavSocials />
 			</div>
 		</nav>
 	);

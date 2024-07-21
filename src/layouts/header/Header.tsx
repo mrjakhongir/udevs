@@ -8,7 +8,7 @@ import NavLarge from './navLarge/NavLarge';
 function Header() {
 	const [openNav, setOpenNav] = useState(false);
 	return (
-		<header className='relative p-4 border-b border-b-slate-200'>
+		<header className='sticky z-20 top-0 bg-white p-4 border-b border-b-slate-200 '>
 			<div className='w-full max-w-[1170px] mx-auto flex items-center justify-between'>
 				<Logo />
 				<NavToggler

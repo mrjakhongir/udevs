@@ -1,23 +1,15 @@
 import { Dispatch, SetStateAction } from 'react';
-import NavSocialItem from './NavSocialItem';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
-const navSocials = [
-	{ id: 1, src: '/assets/contacts/instagram.svg', alt: 'instagram', link: '#' },
-	{ id: 2, src: '/assets/contacts/twitter.svg', alt: 'twitter', link: '#' },
-	{ id: 3, src: '/assets/contacts/youtube.svg', alt: 'youtube', link: '#' },
-];
-
-type NavSocialsProps = {
-	setOpenNav: Dispatch<SetStateAction<boolean>>;
-};
-
-function NavSocials({ setOpenNav }: NavSocialsProps) {
+function NavSocials() {
 	return (
-		<ul className='flex items-center justify-center gap-6'>
-			{navSocials.map((item) => (
-				<NavSocialItem key={item.id} item={item} setOpenNav={setOpenNav} />
-			))}
-		</ul>
+		<div className='flex items-center justify-center gap-6'>
+			<InstagramIcon className='text-white bg-primary w-8 h-8 p-2 rounded-full cursor-pointer' />
+			<TwitterIcon className='text-white bg-primary w-8 h-8 p-2 rounded-full cursor-pointer' />
+			<YouTubeIcon className='text-white bg-primary w-8 h-8 p-2 rounded-full cursor-pointer' />
+		</div>
 	);
 }
 
