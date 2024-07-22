@@ -16,7 +16,7 @@ type CountupProps = {
 
 function Countup({ from, to, animationOptions }: CountupProps) {
 	const ref = useRef<HTMLSpanElement | null>(null);
-	const inView = useInView(ref);
+	const inView = useInView(ref, { once: true });
 	useIsomorphicLayoutEffect(() => {
 		const element = ref.current;
 

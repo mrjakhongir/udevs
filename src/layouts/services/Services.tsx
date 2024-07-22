@@ -1,5 +1,6 @@
-import SectionTitle from '@/components/sectionTitle/SectionTitle';
 import ServiceItem from './ServiceItem';
+import SectionTitle from '@/components/sectionTitle/SectionTitle';
+import TransitionMotionWrapper from '@/components/motionWrapper/TransitionMotionWrapper';
 const services = [
 	{ id: 1, img: '/assets/icons/team.svg', title: 'Team' },
 	{
@@ -31,14 +32,18 @@ const services = [
 
 function Services() {
 	return (
-		<section className='px-4'>
-			<div className='w-full max-w-[1170px] mx-auto py-20 laptop:py-24'>
-				<SectionTitle content='Our services' position='center' />
-				<div className='grid grid-cols-2 lg:grid-cols-3 gap-5 min-[900px]:gap-x-6'>
-					{services.map((service) => (
-						<ServiceItem key={service.id} service={service} />
-					))}
-				</div>
+		<section className='px-4' id='services'>
+			<div className='w-full max-w-[1140px] mx-auto py-20 laptop:py-24'>
+				<TransitionMotionWrapper direction='up' delay={0}>
+					<SectionTitle content='Our services' position='center' />
+				</TransitionMotionWrapper>
+				<TransitionMotionWrapper direction='up' delay={0.2}>
+					<div className='grid grid-cols-2 lg:grid-cols-3 gap-5 min-[900px]:gap-x-6'>
+						{services.map((service) => (
+							<ServiceItem key={service.id} service={service} />
+						))}
+					</div>
+				</TransitionMotionWrapper>
 			</div>
 		</section>
 	);

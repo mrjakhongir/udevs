@@ -1,3 +1,5 @@
+import ScaleUpMotionWrapper from '@/components/motionWrapper/ScaleUpMotionWrapper';
+import TransitionMotionWrapper from '@/components/motionWrapper/TransitionMotionWrapper';
 import SectionTitle from '@/components/sectionTitle/SectionTitle';
 import Services from '@/components/services/serviceCard/Services';
 import Technologies from '@/components/technologies/Technologies';
@@ -38,22 +40,30 @@ function UiUx() {
 			<div className='w-full max-w-[1170px] mx-auto py-6 laptop:py-16'>
 				<SectionTitle content='UI / UX design' position='center' />
 				<div className='flex flex-col laptop:flex-row-reverse items-center laptop:items-stretch laptop:justify-between gap-4 laptop:gap-10'>
-					<div className="bg-[url('/assets/pictures/mobile-apps-bg.png')] bg-no-repeat bg-cover bg-center rounded-3xl max-w-[500px] flex items-center justify-center laptop:flex-1">
-						<Image
-							src='/assets/pictures/mobile-apps-iman.png'
-							alt='open laptop'
-							width={500}
-							height={400}
-						/>
-					</div>
+					<TransitionMotionWrapper direction='up' delay={0}>
+						<div className="bg-[url('/assets/pictures/mobile-apps-bg.png')] bg-no-repeat bg-cover bg-center rounded-3xl max-w-[500px] flex items-center justify-center laptop:flex-1 laptop:h-full">
+							<ScaleUpMotionWrapper delay={0.2}>
+								<Image
+									src='/assets/pictures/mobile-apps-iman.png'
+									alt='open laptop'
+									width={500}
+									height={400}
+								/>
+							</ScaleUpMotionWrapper>
+						</div>
+					</TransitionMotionWrapper>
 					<div className='flex flex-col items-center laptop:items-start laptop:flex-1 max-w-[500px]'>
-						<Text
-							content='Our company takes a human-centered approach to design'
-							color='black'
-							marginBottom='5'
-						/>
-						<Services data={uiux} bg='bgPrimary' />
-						<Technologies title='Technologies' data={technologiesData} />
+						<TransitionMotionWrapper direction='up' delay={0}>
+							<Text
+								content='Our company takes a human-centered approach to design'
+								color='black'
+								marginBottom='5'
+							/>
+						</TransitionMotionWrapper>
+						<TransitionMotionWrapper direction='up' delay={0.2}>
+							<Services data={uiux} bg='bgPrimary' />
+							<Technologies title='Technologies' data={technologiesData} />
+						</TransitionMotionWrapper>
 					</div>
 				</div>
 			</div>

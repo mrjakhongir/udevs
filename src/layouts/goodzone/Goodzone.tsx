@@ -1,3 +1,5 @@
+import ScaleUpMotionWrapper from '@/components/motionWrapper/ScaleUpMotionWrapper';
+import TransitionMotionWrapper from '@/components/motionWrapper/TransitionMotionWrapper';
 import PortfolioTitle from '@/components/portfolioTitle/PortfolioTitle';
 import Services from '@/components/services/serviceCard/Services';
 import Subtitle from '@/components/subtitle/Subtitle';
@@ -19,7 +21,7 @@ const services = [
 function Goodzone() {
 	return (
 		<section className="px-4 bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center">
-			<div className='w-full max-w-[1170px] mx-auto py-6 laptop:py-16'>
+			<div className='w-full max-w-[1140px] mx-auto py-6 laptop:py-16'>
 				<PortfolioTitle
 					title='Goodzone'
 					subtitle='Notification'
@@ -31,22 +33,28 @@ function Goodzone() {
 				/>
 				<div className='laptop:flex items-center gap-10'>
 					<div className='mb-2 flex-1'>
-						<Image
-							className='rounded-3xl'
-							src='/assets/pictures/goodzone.png'
-							alt='goodzone in mobile frame'
-							width={900}
-							height={400}
-						/>
+						<ScaleUpMotionWrapper delay={0.2}>
+							<Image
+								className='rounded-3xl'
+								src='/assets/pictures/goodzone.png'
+								alt='goodzone in mobile frame'
+								width={900}
+								height={400}
+							/>
+						</ScaleUpMotionWrapper>
 					</div>
 					<div className='flex-1 flex flex-col items-center laptop:items-start'>
-						<Text
-							content='Goodzone - Internet shop of household appliances in Uzbekistan.'
-							color='font'
-							marginBottom='5'
-						/>
-						<Subtitle content='What we did?' />
-						<Services data={services} bg='bgPrimary' />
+						<TransitionMotionWrapper direction='up' delay={0}>
+							<Text
+								content='Goodzone - Internet shop of household appliances in Uzbekistan.'
+								color='font'
+								marginBottom='5'
+							/>
+						</TransitionMotionWrapper>
+						<TransitionMotionWrapper direction='up' delay={0}>
+							<Subtitle content='What we did?' />
+							<Services data={services} bg='bgPrimary' />
+						</TransitionMotionWrapper>
 					</div>
 				</div>
 			</div>

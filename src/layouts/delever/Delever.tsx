@@ -1,3 +1,5 @@
+import ScaleUpMotionWrapper from '@/components/motionWrapper/ScaleUpMotionWrapper';
+import TransitionMotionWrapper from '@/components/motionWrapper/TransitionMotionWrapper';
 import PortfolioTitle from '@/components/portfolioTitle/PortfolioTitle';
 import Services from '@/components/services/serviceCard/Services';
 import Subtitle from '@/components/subtitle/Subtitle';
@@ -19,7 +21,7 @@ const services = [
 function Delever() {
 	return (
 		<section className="px-4 bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center">
-			<div className='w-full max-w-[1170px] mx-auto py-6 laptop:py-16'>
+			<div className='w-full max-w-[1140px] mx-auto py-6 laptop:py-16'>
 				<PortfolioTitle
 					title='Delever'
 					subtitle='Delivery'
@@ -31,22 +33,30 @@ function Delever() {
 				/>
 				<div className='laptop:flex items-center gap-10'>
 					<div className='flex-1 mb-2'>
-						<Image
-							className='rounded-3xl'
-							src='/assets/pictures/delever.png'
-							alt='delever in mobile frame'
-							width={900}
-							height={400}
-						/>
+						<ScaleUpMotionWrapper delay={0.2}>
+							<Image
+								className='rounded-3xl'
+								src='/assets/pictures/delever.png'
+								alt='delever in mobile frame'
+								width={900}
+								height={400}
+							/>
+						</ScaleUpMotionWrapper>
 					</div>
 					<div className='flex-1 flex flex-col items-center laptop:items-start'>
-						<Text
-							content='Delever - Delivery service automation targeted at both consumers and restaurants.'
-							color='font'
-							marginBottom='5'
-						/>
-						<Subtitle content='What we did?' />
-						<Services data={services} bg='bgPrimary' />
+						<TransitionMotionWrapper direction='up' delay={0}>
+							<Text
+								content='Delever - Delivery service automation targeted at both consumers and restaurants.'
+								color='font'
+								marginBottom='5'
+							/>
+						</TransitionMotionWrapper>
+						<TransitionMotionWrapper direction='up' delay={0.2}>
+							<Subtitle content='What we did?' />
+							<div className='-mb-12'>
+								<Services data={services} bg='bgPrimary' />
+							</div>
+						</TransitionMotionWrapper>
 					</div>
 				</div>
 			</div>

@@ -347,7 +347,7 @@ function Tools() {
 	const [selectedTool, setSelectedTool] = useState('');
 	return (
 		<section className='px-4 bg-bgPrimary'>
-			<div className='w-full max-w-[1170px] mx-auto pt-8 laptop:py-16'>
+			<div className='w-full max-w-[1140px] mx-auto pt-8 laptop:py-16'>
 				<SectionTitle content='Tools' position='center' />
 				<SelectTools setSelectedTool={setSelectedTool} />
 				<div className='grid grid-cols-5 laptop:grid-cols-12 gap-2'>

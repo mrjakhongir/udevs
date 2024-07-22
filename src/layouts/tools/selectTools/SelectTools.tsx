@@ -17,7 +17,7 @@ type SelectToolsProps = {
 
 function SelectTools({ setSelectedTool }: SelectToolsProps) {
 	return (
-		<div className='grid grid-cols-2 mb-5'>
+		<div className='grid grid-cols-2 laptop:flex laptop:gap-4 mb-5'>
 			{fields.map((field) => (
 				<SelectElement key={field} field={field} setTool={setSelectedTool} />
 			))}

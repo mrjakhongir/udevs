@@ -1,3 +1,5 @@
+import ScaleUpMotionWrapper from '@/components/motionWrapper/ScaleUpMotionWrapper';
+import TransitionMotionWrapper from '@/components/motionWrapper/TransitionMotionWrapper';
 import SectionTitle from '@/components/sectionTitle/SectionTitle';
 import Services from '@/components/services/serviceCard/Services';
 import Text from '@/components/text/Text';
@@ -27,24 +29,32 @@ const erpSystems = [
 function ErpSystems() {
 	return (
 		<section className='px-4 bg-bgPrimary'>
-			<div className='w-full max-w-[1170px] mx-auto pt-8 laptop:pt-12 laptop:pb-10'>
+			<div className='w-full max-w-[1140px] mx-auto pt-8 laptop:py-16'>
 				<SectionTitle content='ERP systems' position='center' />
-				<div className='flex flex-col laptop:flex-row items-center laptop:items-stretch laptop:justify-between gap-4 laptop:gap-10'>
-					<div className="bg-[url('/assets/pictures/mobile-apps-bg.png')] bg-no-repeat bg-cover bg-center rounded-3xl max-w-[500px] flex items-center justify-center laptop:flex-1">
-						<Image
-							src='/assets/pictures/note-book.png'
-							alt='open laptop'
-							width={500}
-							height={400}
-						/>
-					</div>
-					<div className='flex flex-col items-center max-w-[500px] laptop:flex-1'>
-						<Text
-							content='IT Systems of any level of complexity at a convenient time for you'
-							color='black'
-							marginBottom='5'
-						/>
-						<Services data={erpSystems} bg='bgSecondary' />
+				<div className='flex flex-col laptop:flex-row items-center laptop:items-stretch laptop:justify-between gap-4 laptop:gap-7'>
+					<TransitionMotionWrapper direction='up' delay={0}>
+						<div className="bg-[url('/assets/pictures/mobile-apps-bg.png')] bg-no-repeat bg-cover bg-center rounded-3xl max-w-[500px] flex items-center justify-center laptop:flex-1 laptop:h-full">
+							<ScaleUpMotionWrapper delay={0.2}>
+								<Image
+									src='/assets/pictures/note-book.png'
+									alt='open laptop'
+									width={500}
+									height={400}
+								/>
+							</ScaleUpMotionWrapper>
+						</div>
+					</TransitionMotionWrapper>
+					<div className='flex flex-col items-center max-w-[500px] laptop:flex-1 laptop:gap-4'>
+						<TransitionMotionWrapper direction='up' delay={0}>
+							<Text
+								content='IT Systems of any level of complexity at a convenient time for you'
+								color='black'
+								marginBottom='5'
+							/>
+						</TransitionMotionWrapper>
+						<TransitionMotionWrapper direction='up' delay={0}>
+							<Services data={erpSystems} bg='bgSecondary' />
+						</TransitionMotionWrapper>
 					</div>
 				</div>
 			</div>

@@ -2,7 +2,7 @@ import NavLargeItem from './navLargeItem/NavLargeItem';
 import NavLargeItemWithDropdown from './navLargeItem/NavLargeItemWithDropdown';
 
 const navLargeItems = [
-	{ id: 1, content: 'Direction', link: '#direction' },
+	{ id: 1, content: 'Direction', link: '#services' },
 	{ id: 2, content: 'Command', link: '#command' },
 	{
 		id: 9,
