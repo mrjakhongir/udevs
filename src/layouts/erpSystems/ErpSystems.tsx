@@ -28,8 +28,8 @@ const erpSystems = [
 
 function ErpSystems() {
 	return (
-		<section className='px-4 bg-bgPrimary'>
-			<div className='w-full max-w-[1140px] mx-auto pt-8 laptop:py-16'>
+		<section className='px-4 bg-bgPrimary' id='erp-systems'>
+			<div className='w-full max-w-[1140px] mx-auto pt-8 laptop:py-20'>
 				<SectionTitle content='ERP systems' position='center' />
 				<div className='flex flex-col laptop:flex-row items-center laptop:items-stretch laptop:justify-between gap-4 laptop:gap-7'>
 					<TransitionMotionWrapper direction='up' delay={0}>

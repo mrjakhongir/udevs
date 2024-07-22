@@ -3,7 +3,7 @@ import NavLargeItemWithDropdown from './navLargeItem/NavLargeItemWithDropdown';
 
 const navLargeItems = [
 	{ id: 1, content: 'Direction', link: '#services' },
-	{ id: 2, content: 'Command', link: '#command' },
+	{ id: 2, content: 'Command', link: '#team' },
 	{
 		id: 9,
 		content: 'Services',
@@ -41,7 +41,7 @@ const navLargeItems = [
 				id: 35,
 				iconSrc: '/assets/icons/gear.svg',
 				content: 'Optimization IT consulting infrastructure',
-				link: '#optimization-infrastructure',
+				link: '#optimization',
 				category: 'services',
 			},
 		],

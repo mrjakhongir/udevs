@@ -20,8 +20,10 @@ const services = [
 
 function Goodzone() {
 	return (
-		<section className="px-4 bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center">
-			<div className='w-full max-w-[1140px] mx-auto py-6 laptop:py-16'>
+		<section
+			className="px-4 bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center"
+			id='goodzone'>
+			<div className='w-full max-w-[1140px] mx-auto py-6 laptop:py-20'>
 				<PortfolioTitle
 					title='Goodzone'
 					subtitle='Notification'

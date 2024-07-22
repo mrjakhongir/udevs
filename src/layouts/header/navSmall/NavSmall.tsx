@@ -8,9 +8,9 @@ import NavItemSmall from './NavItemSmall';
 import NavSocials from './navSocials/NavSocials';
 
 const navItems = [
-	{ id: 1, content: 'Services', link: '#' },
-	{ id: 2, content: 'Clients', link: '#' },
-	{ id: 3, content: 'Command', link: '#' },
+	{ id: 1, content: 'Services', link: '#services' },
+	{ id: 2, content: 'Clients', link: '#clients' },
+	{ id: 3, content: 'Command', link: '#team' },
 ];
 
 type NavSmallProps = {

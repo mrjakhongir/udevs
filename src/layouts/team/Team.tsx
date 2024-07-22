@@ -9,12 +9,12 @@ import TransitionMotionWrapper from '@/components/motionWrapper/TransitionMotion
 
 function Team() {
 	return (
-		<section className='px-4 bg-bgPrimary'>
-			<div className='w-full max-w-[1140px] mx-auto py-6 laptop:py-16'>
+		<section className='px-4 bg-bgPrimary' id='team'>
+			<div className='w-full max-w-[1140px] mx-auto py-6 laptop:py-20'>
 				<TransitionMotionWrapper direction='up' delay={0}>
 					<SectionTitle content='Team' position='center' />
 				</TransitionMotionWrapper>
-				<div className='flex flex-col items-center laptop:flex-row-reverse gap-6 laptop:gap-10'>
+				<div className='flex flex-col items-center laptop:flex-row-reverse gap-6 laptop:gap-20'>
 					<ScaleUpMotionWrapper delay={0.2}>
 						<div className='laptop:flex-1'>
 							<Image

@@ -8,8 +8,8 @@ const footerLinks = [
 		id: 1,
 		title: 'About us',
 		links: [
-			{ id: 11, label: 'Direction', link: '#direction' },
-			{ id: 12, label: 'Command', link: '#command' },
+			{ id: 11, label: 'Direction', link: '#services' },
+			{ id: 12, label: 'Command', link: '#team' },
 			{ id: 13, label: 'Tools', link: '#tools' },
 			{ id: 14, label: 'Clients', link: '#clients' },
 		],
@@ -31,7 +31,7 @@ const footerLinks = [
 			{
 				id: 21,
 				label: 'Development of mobile applications',
-				link: '#mobile-apps',
+				link: '#mobile-applications',
 			},
 			{
 				id: 22,
@@ -41,7 +41,7 @@ const footerLinks = [
 			{
 				id: 23,
 				label: 'User interface, User experience design',
-				link: '#ux-ui',
+				link: '#ui/ux-design',
 			},
 			{ id: 24, label: 'IT consulting', link: '#it-consulting' },
 			{
@@ -55,7 +55,7 @@ const footerLinks = [
 
 function Footer() {
 	return (
-		<footer className='px-4 bg-bgPrimary'>
+		<footer className='px-4 bg-bgPrimary' id='contacts'>
 			<div className='py-6 laptop:pb-12 max-w-[1170px] mx-auto'>
 				<div className='flex items-center justify-center mb-5 laptop:mb-10'>
 					<Image

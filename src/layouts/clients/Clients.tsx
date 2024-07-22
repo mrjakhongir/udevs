@@ -25,8 +25,8 @@ const brands = [
 
 function Clients() {
 	return (
-		<section className='py-8'>
-			<div className='w-full max-w-[1170px] px-4 mx-auto'>
+		<section className='py-6' id='clients'>
+			<div className='w-full max-w-[1140px] px-4 mx-auto'>
 				<SectionTitle content='Our clients' position='center' />
 			</div>
 			<div className='flex flex-col'>

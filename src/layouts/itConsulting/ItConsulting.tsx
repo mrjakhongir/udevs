@@ -29,8 +29,10 @@ const consulting = [
 
 function ItConsulting() {
 	return (
-		<section className="px-4 bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center">
-			<div className='w-full max-w-[1140px] mx-auto py-6 laptop:py-16'>
+		<section
+			className="px-4 bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center"
+			id='it-consulting'>
+			<div className='w-full max-w-[1140px] mx-auto py-6 laptop:py-20'>
 				<SectionTitle content='IT consulting' position='center' />
 				<div className='flex flex-col laptop:flex-row-reverse items-center laptop:items-stretch laptop:justify-between gap-4 laptop:gap-10'>
 					<div className='max-w-[500px] flex items-center justify-center laptop:flex-1'>

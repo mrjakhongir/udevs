@@ -36,8 +36,10 @@ const technologiesData = [
 
 function UiUx() {
 	return (
-		<section className="px-4 bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center">
-			<div className='w-full max-w-[1170px] mx-auto py-6 laptop:py-16'>
+		<section
+			className="px-4 bg-[url('/assets/pictures/section-bg.png')] bg-no-repeat bg-cover bg-center"
+			id='ui/ux-design'>
+			<div className='w-full max-w-[1140px] mx-auto py-6 laptop:py-20'>
 				<SectionTitle content='UI / UX design' position='center' />
 				<div className='flex flex-col laptop:flex-row-reverse items-center laptop:items-stretch laptop:justify-between gap-4 laptop:gap-10'>
 					<TransitionMotionWrapper direction='up' delay={0}>
