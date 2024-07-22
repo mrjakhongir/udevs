@@ -42,7 +42,7 @@ function MobileApps() {
 							</ScaleUpMotionWrapper>
 						</div>
 					</ScaleUpMotionWrapper>
-					<div className='flex flex-col items-center laptop:items-stretch laptop:flex-1 max-w-[500px]'>
+					<div className='flex flex-col items-center laptop:items-stretch laptop:flex-1 laptop:max-w-[500px]'>
 						<TransitionMotionWrapper direction='up' delay={0}>
 							<Text
 								content='In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.'

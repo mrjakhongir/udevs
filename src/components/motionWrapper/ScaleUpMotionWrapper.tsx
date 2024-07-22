@@ -10,6 +10,7 @@ type ScaleUpMotionWrapperProps = {
 function ScaleUpMotionWrapper({ children, delay }: ScaleUpMotionWrapperProps) {
 	return (
 		<motion.div
+			className='self-center laptop:self-stretch'
 			variants={scaleUp(delay)}
 			initial='hidden'
 			whileInView='show'

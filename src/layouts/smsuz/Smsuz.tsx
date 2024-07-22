@@ -39,7 +39,7 @@ function Smsuz() {
 							/>
 						</ScaleUpMotionWrapper>
 					</div>
-					<div className=' flex-1 flex flex-col items-center laptop:items-start'>
+					<div className='flex-1 flex flex-col items-center laptop:items-start'>
 						<TransitionMotionWrapper direction='up' delay={0}>
 							<Text
 								content='Smsuz.uz - It is a platform for bulk SMS messaging.'

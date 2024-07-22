@@ -15,6 +15,7 @@ function TransitionMotionWrapper({
 }: TransitionMotionWrapperProps) {
 	return (
 		<motion.div
+			className='laptop:self-stretch'
 			variants={fadeIn(direction, delay)}
 			initial='hidden'
 			whileInView='show'
